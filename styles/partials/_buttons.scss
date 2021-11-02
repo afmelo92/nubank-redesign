@@ -1,0 +1,28 @@
+a {
+  @include typeface-2(p2, desktop);
+  text-decoration: none;
+  color: $black-normal;
+
+  transition: .5s ease;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.btn {
+  background: linear-gradient(220.94deg, $secondary-normal 14.43%, $primary-normal 85.28%);
+  border-radius: 16px;
+  padding: 12px 32px;
+  color: $white-light;
+
+  transition: .3s ease;
+
+  &:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 17px 33px rgba(169, 80, 196, 0.55), 
+                0px 5.125px 9.94853px rgba(169, 80, 196, 0.358374), 
+                0px 2.12866px 4.13211px rgba(169, 80, 196, 0.275), 
+                0px 0.769896px 1.4945px rgba(169, 80, 196, 0.191626);
+  }
+}
