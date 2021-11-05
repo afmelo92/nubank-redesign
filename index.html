@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="styles/style.css">
   <script src="js/svg-inject.min.js"></script>
   <title>Nubank</title>
@@ -217,6 +221,134 @@
     </div>
   </section>
 
+  <!-- SECTION DIGITAL ACCOUNT -->
+
+  <section class="container">
+    <div class="flex-item-1 p-3">
+      <img src="svg/fignu2.svg" class="icon" onload="SVGInject(this)">
+
+    </div>
+    <div class="flex-item-1">
+      <h5>Conta digital</h5>
+      <h2 class="mt-2">Tudo pelo app</h2>
+      <p class="my-2">
+        Nossa conta digital com mais de 20 milhões de clientes em todo o Brasil.
+        Pague suas contas, ajuste seu limite, bloqueie e desbloqueie o cartão
+        quando quiser e acompanhe cada movimentação em tempo real. Tudo pelo
+        aplicativo.
+      </p>
+      <ul class="list my-3">
+        <li class="list-item bg-icon-mobile">
+          <strong>Tudo na palma da sua mão</strong>
+          <p>
+            Conta digital. Você resolve tudo pelo app.
+          </p>
+        </li>
+        <li class="list-item bg-icon-time">
+          <strong>Sem filas ou burocracia</strong>
+          <p>
+            Investimos no melhor suporte para isso. Não tem filas. Economia de tempo.
+          </p>
+        </li>
+        <li class="list-item bg-icon-config">
+          <strong>Configure tudo pelo app</strong>
+          <p>
+            TOda a configuração e acesso aos novos recursos a um clique de distância.
+          </p>
+        </li>
+      </ul>
+
+      <div>
+        <a href="#" class="link">Segura e sem complicações</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SLIDER -->
+
+  <section class="box">
+    <h5>Depoimentos</h5>
+    <h2>Todos amam o roxinho</h2>
+  </section>
+  <section class="container-swiper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="photo-profile photo-1"></div>
+          <h4 class="my-1">Jorge Jesus</h4>
+          <p class="my-1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Deleniti repudiandae perferendis, ipsam, laborum nihil obcaecati 
+            fficiis ab magni, illo minus libero id doloremque ipsa eligendi! 
+            Commodi odio veritatis facere dolore.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <div class="photo-profile photo-2"></div>
+          <h4 class="my-1">Maria Madalena</h4>
+          <p class="my-1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Deleniti repudiandae perferendis, ipsam, laborum nihil obcaecati 
+            fficiis ab magni, illo minus libero id doloremque ipsa eligendi! 
+            Commodi odio veritatis facere dolore.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <div class="photo-profile photo-3"></div>
+          <h4 class="my-1">Malu Perini</h4>
+          <p class="my-1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Deleniti repudiandae perferendis, ipsam, laborum nihil obcaecati 
+            fficiis ab magni, illo minus libero id doloremque ipsa eligendi! 
+            Commodi odio veritatis facere dolore.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <div class="photo-profile photo-4"></div>
+          <h4 class="my-1">Vera Cruz</h4>
+          <p class="my-1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Deleniti repudiandae perferendis, ipsam, laborum nihil obcaecati 
+            fficiis ab magni, illo minus libero id doloremque ipsa eligendi! 
+            Commodi odio veritatis facere dolore.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <div class="photo-profile photo-5"></div>
+          <h4 class="my-1">Cristina Maria</h4>
+          <p class="my-1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Deleniti repudiandae perferendis, ipsam, laborum nihil obcaecati 
+            fficiis ab magni, illo minus libero id doloremque ipsa eligendi! 
+            Commodi odio veritatis facere dolore.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="button-next"></div>
+      
+    <div class="button-prev"></div>
+  </section>
+
+  <!-- END -->
+
   <script src="js/index.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    var swipper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 40,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'progressbar'
+      },
+      navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev'
+      }
+    })
+  </script>
 </body>
 </html>

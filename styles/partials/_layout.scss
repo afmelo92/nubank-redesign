@@ -229,5 +229,9 @@ $container-s: 540px;
   @include responsive(s) {
     justify-content: center;
     align-items: center;
+
+    h2 {
+      text-align: center;
+    }
   }
 }
