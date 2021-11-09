@@ -1135,7 +1135,7 @@ header {
 .icon-card-hero {
   position: absolute;
   top: 0px;
-  left: -30px;
+  left: 180px;
   z-index: 200;
   animation: icons-hero 7s ease 0.5s infinite alternate;
 }
@@ -1143,7 +1143,7 @@ header {
 .icon-contactless-hero {
   position: absolute;
   top: 350px;
-  left: 30px;
+  left: 310px;
   z-index: 200;
   animation: icons-hero 7s ease 1s infinite alternate;
 }
@@ -1157,7 +1157,7 @@ header {
 .icon-mobile-hero {
   position: absolute;
   top: 150px;
-  left: -250px;
+  left: 550px;
   z-index: 200;
   animation: icons-hero 7s ease 2.5s infinite alternate;
 }
@@ -1342,6 +1342,52 @@ header {
 
 .fignu2-icon5 {
   animation: fig2-icon1-move 3s ease 2.3s infinite alternate;
+}
+
+.fignu3-card-verse {
+  transform-origin: center center;
+  transform-box: fill-box;
+  transform: translate3d(0, -40px, 0) rotate(0deg);
+  animation: fignu3-card-verse-move 3s ease infinite alternate;
+}
+
+@keyframes fignu3-card-verse-move {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(5deg);
+  }
+}
+.fignu3-card-front {
+  transform-origin: center center;
+  transform-box: fill-box;
+  transform: translate3d(0, -40px, 0) rotate(0deg);
+  animation: fignu3-card-front-move 3s ease 1s infinite alternate;
+}
+
+@keyframes fignu3-card-front-move {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}
+.fignu3-shadow {
+  transform-origin: center center;
+  transform-box: fill-box;
+  fill-opacity: 0.15;
+  animation: fignu3-shadow 3s ease 1s infinite alternate;
+}
+
+@keyframes fignu3-shadow {
+  0% {
+    fill-opacity: 0.15;
+  }
+  100% {
+    fill-opacity: 0.4;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
